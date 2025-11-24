@@ -1,0 +1,9 @@
+@use './mixin' as base;
+
+@include base.media(768px) {
+  
+}
+
+@include base.media(576px) {
+  
+}

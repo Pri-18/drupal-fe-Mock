@@ -1,0 +1,11 @@
+uuid: 3b2ad009-5a14-47c8-a22b-562c0c768c69
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.design3
+label: design3
+description: ''
+targetEntityType: node
+cache: true

@@ -1,0 +1,92 @@
+@use '../abstracts' as *;
+
+.design1 {
+  padding: 1.2rem 2.2rem 2.2rem 1.6rem;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  min-height: 450px;
+  @extend %responsive-heights;
+
+  &__wrapper {
+    background-color: $bg-color;
+    padding: $space-16;
+    box-shadow: -5px 10px 100px $card-gray;
+  }
+
+  &__image {
+    margin-top: $space-32;
+    width: 100%;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: -32px;
+      width: 62px;
+      height: 10px;
+      background: $card-gray;
+      transform: translateX(-50%);
+      border-radius: 10px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 32%;
+      height: 132%;
+      top: 0;
+      opacity: 0.5;
+      background: $pink;
+
+      @media (max-width: 1200px) {
+        height: 174%;
+      }
+
+      @media (max-width: 768px) {
+        height: 158%;
+      }
+
+      @media (max-width: 568px) {
+        height: 114%;
+      }
+
+      @media (max-width: 400px) {
+        height: 120%;
+      }
+
+      @media (max-width: 360px) {
+        height: 130%;
+      }
+    }
+  }
+
+  &__content {
+    margin-top: $space-16;
+  }
+
+  &__title {
+    max-width: 30%;
+    overflow-wrap: anywhere;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    position: relative;
+    padding-left: 0.4rem;
+  }
+
+  &__author {
+    margin: $space-16 0;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+
+    a {
+      color: $text-color;
+      font-weight: 700;
+    }
+  }
+
+}

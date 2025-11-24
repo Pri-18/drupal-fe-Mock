@@ -1,0 +1,44 @@
+@use '../abstracts' as *;
+
+.design2 {
+  padding: $space-16 2.5rem;
+  background: linear-gradient($pink 50%, $card-gray 50%);
+  min-height: 450px;
+  @extend %responsive-heights;
+
+  img {
+    border-radius: 50%;
+  }
+
+  &__wrapper {
+    padding: 3rem $space-16;
+    position: relative;
+    border-radius: $space-32;
+    background-color: $bg-color;
+
+    &::after {
+      content: '';
+      display: block;
+      border-radius: 50%;
+      background: linear-gradient(#dee3e9dc, #fff7f7d3, $bg-color);
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      bottom: 23px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__content {
+    text-align: center;
+    font-size: 0.7rem;
+    margin-top: $space-32;
+  }
+
+  &__title {
+    color: $accent-color;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+}

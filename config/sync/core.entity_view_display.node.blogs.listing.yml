@@ -1,0 +1,31 @@
+uuid: 4d83dd1c-ffa3-4874-9d7a-e02ddbb63438
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.listing
+    - field.field.node.blogs.body
+    - field.field.node.blogs.field_author
+    - field.field.node.blogs.field_blog_image
+    - field.field.node.blogs.field_design
+    - node.type.blogs
+  module:
+    - options
+    - user
+id: node.blogs.listing
+targetEntityType: node
+bundle: blogs
+mode: listing
+content:
+  field_design:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_author: true
+  field_blog_image: true
+  links: true

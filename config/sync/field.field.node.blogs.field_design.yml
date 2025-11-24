@@ -1,0 +1,21 @@
+uuid: 07e20355-bfaa-47f7-a174-9e1610fe686f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_design
+    - node.type.blogs
+  module:
+    - options
+id: node.blogs.field_design
+field_name: field_design
+entity_type: node
+bundle: blogs
+label: Design
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

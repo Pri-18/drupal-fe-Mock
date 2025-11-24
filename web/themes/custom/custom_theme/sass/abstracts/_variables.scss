@@ -1,0 +1,28 @@
+$font-base: "Roboto", sans-serif;
+
+$bg-color: #FBFEF9;
+$text-color: #191923;
+$accent-color: #0E79B2;
+$pink: #F8327D;
+$card-gray: #DEE3E9;
+$light-pink: #FFF1F1;
+
+$space-8: 0.5rem;
+$space-16: 1rem;
+$space-32: 2rem;
+
+%responsive-heights {
+  @media (max-width: 1400px) {
+    max-height: 350px;
+    min-height: auto;
+    overflow-y: auto;
+  }
+
+  @media (max-width: 1200px) {
+    max-height: 300px;
+  }
+
+  @media (max-width: 768px) {
+    max-height: fit-content;
+  }
+}

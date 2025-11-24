@@ -1,0 +1,29 @@
+<div class="design2">
+	<div class="design2__wrapper">
+		{% if content.field_blog_image %}
+			<div class="design2__image">
+				{{ content.field_blog_image }}
+			</div>
+		{% endif %}
+		{# <pre>
+			{{ dump(
+				view_mode
+			) }}
+		</pre> #}
+
+		<div class="design2__content">
+
+			{% if label %}
+				<h2 class="design2__title">
+					{{ label }}
+				</h2>
+			{% endif %}
+			{% if content.body %}
+				<div class="design2__desc">
+					{{ content.body }}
+				</div>
+			{% endif %}
+
+		</div>
+	</div>
+</div>

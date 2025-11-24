@@ -1,0 +1,25 @@
+<div class="design3">
+	<div class="design3__wrapper">
+
+		<div class="design3__content">
+			{% if content.field_blog_image %}
+				<div class="design3__image">
+					{{ content.field_blog_image }}
+				</div>
+			{% endif %}
+
+			{% if content.body %}
+				<div class="design3__desc">
+					{{ content.body }}
+				</div>
+			{% endif %}
+
+		</div>
+
+		{% if label %}
+			<h2 class="design3__title">
+				{{ label }}
+			</h2>
+		{% endif %}
+	</div>
+</div>
