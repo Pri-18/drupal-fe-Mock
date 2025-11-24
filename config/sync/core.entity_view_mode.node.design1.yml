@@ -1,0 +1,11 @@
+uuid: a413b437-f25d-4bbe-8e54-8d138955ab7f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.design1
+label: design1
+description: ''
+targetEntityType: node
+cache: true
