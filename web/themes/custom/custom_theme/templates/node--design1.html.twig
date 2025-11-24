@@ -1,0 +1,26 @@
+{# <pre>
+	{{ dump() }}
+</pre> #}
+
+<div class="design1">
+	<div class="design1__wrapper">
+		{% if content.field_blog_image %}
+			<div class="design1__image">
+				{{ content.field_blog_image }}
+			</div>
+		{% endif %}
+
+		<div class="design1__content">
+			{% if label %}
+				<h2 class="design1__title">
+					{{ node.label }}
+				</h2>
+			{% endif %}
+
+			{% if content.field_author %}
+				<div class="design1__author">
+					{{ content.field_author }}
+				</div>
+			{% endif %}
+		</div>
+	</div>

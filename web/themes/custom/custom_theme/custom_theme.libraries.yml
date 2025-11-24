@@ -1,0 +1,14 @@
+global:
+  css:
+    theme:
+        css/main.css: {}
+
+card:
+  css:
+    theme:
+        css/card.css: {}
+
+font_awesome:
+  css:
+    theme:
+      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css: { type: external, minified: true }

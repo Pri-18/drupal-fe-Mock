@@ -1,0 +1,50 @@
+@use '../abstracts' as *;
+
+.design3 {
+  padding: 2.5rem 1.5rem 1.8rem 1.5rem;
+  background-color: $light-pink;
+  min-height: 450px;
+  @extend %responsive-heights;
+
+  &__content {
+    position: relative;
+  }
+
+  &__desc {
+    position: absolute;
+    top: 0;
+    padding: $space-16;
+    color: $bg-color;
+    text-align: center;
+    font-size: 0.8rem;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 34px;
+      height: 6px;
+      background: $card-gray;
+      transform: translateX(-50%);
+      border-radius: 10px;
+    }
+  }
+
+  &__title {
+    padding: $space-16 $space-16 0 $space-16;
+    font-size: 1rem;
+    font-weight: 700;
+    position: relative;
+
+    &::after {
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      content: "\f141";
+      margin-right: $space-16;
+      position: absolute;
+      right: 0;
+    }
+  }
+}
