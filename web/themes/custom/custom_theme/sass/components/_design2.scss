@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 .design2 {
-  padding: $space-16 2.5rem;
+  padding: $space-sm $space-xl;
   background: linear-gradient($pink 50%, $card-gray 50%);
   min-height: 450px;
   @extend %responsive-heights;
@@ -11,9 +11,9 @@
   }
 
   &__wrapper {
-    padding: 3rem $space-16;
+    padding: 3rem $space-sm;
     position: relative;
-    border-radius: $space-32;
+    border-radius: $space-md;
     background-color: $bg-color;
 
     &::after {
@@ -33,7 +33,7 @@
   &__content {
     text-align: center;
     font-size: 0.7rem;
-    margin-top: $space-32;
+    margin-top: $space-md;
   }
 
   &__title {
