@@ -7,19 +7,26 @@ $pink: #F8327D;
 $card-gray: #DEE3E9;
 $light-pink: #FFF1F1;
 
-$space-8: 0.5rem;
-$space-16: 1rem;
-$space-32: 2rem;
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 2rem;
+$space-lg: 2.2rem;
+$space-xl: 2.5rem;
+
+$font-sm: 0.8rem;
+$font-md: 1rem;
+$font-lg: 1.5rem;
 
 %responsive-heights {
   @media (max-width: 1400px) {
-    max-height: 350px;
-    min-height: auto;
+    max-height: 400px;
+    min-height: auto !important;
     overflow-y: auto;
   }
 
   @media (max-width: 1200px) {
-    max-height: 300px;
+    max-height: 370px;
+    min-height: unset !important;
   }
 
   @media (max-width: 768px) {
